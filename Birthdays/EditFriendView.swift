@@ -21,7 +21,7 @@ struct EditFriendView: View {
     var body: some View {
         Form {
             TextField("Name", text: $newName)
-            DatePicker("Birthday", selection: $newBirthday)
+            DatePicker("Birthday", selection: $newBirthday, displayedComponents: .date)
         }
         .navigationTitle("Edit Friend")
         .navigationBarTitleDisplayMode(.inline)
